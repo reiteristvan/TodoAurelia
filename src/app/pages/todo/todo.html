@@ -1,0 +1,10 @@
+<template>
+    <require from="../../nav-bar"></require>
+    
+    <nav-bar router.bind="router"></nav-bar>
+    
+    <div repeat.for="todoItem of todoItems">
+        <h1>${todoItem.description}</h1>
+        <h2>${todoItem.done}</h2>
+    </div>
+</template>
